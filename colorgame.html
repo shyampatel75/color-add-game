@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--exnel CSS-->
+    <link rel="stylesheet" href=".//colorgame.css">
+
+    <title>world!</title>
+</head>
+
+<body>
+
+
+
+
+    <div class="title">
+        <h1>Color Game Meach</h1>
+        <input type="number" id="rows" style="width: 70px;">
+    <input type="number" id="cols" style="width: 70px;">
+    <button onclick="tableCreate()">push</button>
+    </div>
+    
+
+    
+    <div class="colors" style="margin-top: 10px;">
+        <input type="text" data-color="#FF0000" id="colorInput1" readonly
+        style="background-color:#FF0000 ; height: 30px; width: 30px;">
+        <input type="text" data-color="#00FF00" id="colorInput2" readonly
+        style="background-color: #00FF00; height: 30px; width: 30px">
+        <input type="text" data-color="#0000FF" id="colorInput3" readonly
+        style="background-color: #0000FF; height: 30px; width: 30px">
+        <input type="text" data-color="#FFFF00" id="colorInput4" readonly
+            style="background-color:#FFFF00 ; height: 30px; width: 30px">
+        <input type="text" data-color="#00FFFF" id="colorInput5" readonly
+            style="background-color:#00FFFF ; height: 30px; width: 30px">
+        <input type="text" data-color="#FF00FF" id="colorInput6" readonly
+            style="background-color: #FF00FF; height: 30px; width: 30px">
+        <input type="text" data-color="#000000" id="colorInput7" readonly
+            style="background-color: #000000; height: 30px; width: 30px">
+        <input type="text" data-color="#FFFFFF" id="colorInput8" readonly
+            style="background-color:#ffffff ; height: 30px; width: 30px">
+        <input type="text" data-color="#808080" id="colorInput9" readonly
+            style="background-color: #808080; height: 30px; width: 30px">
+        <input type="text" data-color="#FFA500" id="colorInput10" readonly
+            style="background-color: #Ffa500; height: 30px; width: 30px">
+        <input type="text" data-color="#800080" id="colorInput11" readonly
+            style="background-color: #800080; height: 30px; width: 30px">
+        <input type="text" data-color="#FFC0CB" id="colorInput12" readonly
+            style="background-color: #ffc0cb; height: 30px; width: 30px">
+    </div>
+    </div>
+    <div id="dynamicTable" style="width: max-content;"></div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="/colorgame.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

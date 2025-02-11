@@ -1,0 +1,36 @@
+.title {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    height: 93px;
+    padding-top: 14px;
+}   
+.colors {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 31px 0px 47px;
+    height: 100vh;
+    gap: 7px;
+    padding-top: 75px;
+}
+
+div#dynamicTable{
+    width: max-content;
+    padding: 166px 0px 0px 157px;
+    /* background: antiquewhite; */
+}
+
+
+
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    
+  }
+
+  input {
+    cursor: pointer;
+  }
