@@ -1,37 +1,41 @@
+/* Title fixed at the top */
 .title {
     position: fixed;
     width: 100%;
     text-align: center;
-    height: 93px;
-    
+    height: 111px;
     padding-top: 14px;
-}   
+    background: white;
+    z-index: 10;  /* Ensures the title is on top */
+}
+
+/* Sidebar with color options */
 .colors {
     position: fixed;
     display: flex;
     flex-direction: column;
-    margin: 0px 31px 0px 47px;
     height: 100vh;
     gap: 7px;
-    padding-top: 75px;
+    padding: 100px 12px 10px 76px; /* Adjusted padding for visual balance */
+    background-color: white;
+    z-index: 5;  /* Ensures it's below the title */
 }
 
-div#dynamicTable{
+/* Table container */
+div#dynamicTable {
+    padding-left: 157px; /* Adjusted for better alignment */
     width: max-content;
-    padding: 166px 0px 0px 157px;
-    /* background: antiquewhite; */
 }
 
-
-
-
+/* Table cell styling */
 td {
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    
-  }
+    text-align: center;
+}
 
-  input {
+/* Input style */
+input {
     cursor: pointer;
-  }
+}
