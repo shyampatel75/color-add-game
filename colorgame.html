@@ -19,41 +19,34 @@
 <body>
 
     <div class="title">
-        <h1>Color Game Meach</h1>
-        <input type="number" id="rows" style="width: 70px;">
-    <input type="number" id="cols" style="width: 70px;">
+        <h2>Create Dynamic Table</h2>
+    <label> <input type="number" id="rows" ></label>
+    <label> <input type="number" id="cols" ></label>
     <button onclick="tableCreate()">push</button>
+    <button onclick="clearTable()">Clear</button>
+    <button onclick="saveToFile()">Save</button>
+    <button onclick="loadFromFile()">Load </button>
+    <input type="file" id="fileInput" accept=".json" style="display:none" onchange="handleFileUpload(event)">
+
     </div>
     
     <div class="colors" style="margin-top: 10px;">
-        <input type="text" data-color="#FF0000" id="colorInput1" readonly
-        style="background-color:#e90e0e ; height: 30px; width: 30px;">
-        <input type="text" data-color="#0a530a" id="colorInput2" readonly
-        style="background-color: #0a530a; height: 30px; width: 30px">
-        <input type="text" data-color="#0000FF" id="colorInput3" readonly
-        style="background-color: #0000FF; height: 30px; width: 30px">
-        <input type="text" data-color="#FFFF00" id="colorInput4" readonly
-            style="background-color:#FFFF00 ; height: 30px; width: 30px">
-        <input type="text" data-color="#00FFFF" id="colorInput5" readonly
-            style="background-color:#00FFFF ; height: 30px; width: 30px">
-        <input type="text" data-color="#FF00FF" id="colorInput6" readonly
-            style="background-color: #FF00FF; height: 30px; width: 30px">
-        <input type="text" data-color="#000000" id="colorInput7" readonly
-            style="background-color: #000000; height: 30px; width: 30px">
-        <input type="text" data-color="#FFFFFF" id="colorInput8" readonly   x`
-            style="background-color:#ffffff ; height: 30px; width: 30px">
-        <input type="text" data-color="#808080" id="colorInput9" readonly
-            style="background-color: #808080; height: 30px; width: 30px">
-        <input type="text" data-color="#FFA500" id="colorInput10" readonly
-            style="background-color: #Ffa500; height: 30px; width: 30px">
-        <input type="text" data-color="#800080" id="colorInput11" readonly
-            style="background-color: #800080; height: 30px; width: 30px">
-        <input type="text" data-color="#FFC0CB" id="colorInput12" readonly
-            style="background-color: #ffc0cb; height: 30px; width: 30px">
+        <div class="color-box" style="background-color: red;" data-color="red"></div>
+        <div class="color-box" style="background-color: blue;" data-color="blue"></div>
+        <div class="color-box" style="background-color: green;" data-color="green"></div>
+        <div class="color-box" style="background-color: #817;" data-color="#817"></div>
+        <div class="color-box" style="background-color: #a35;" data-color="#a35"></div>
+        <div class="color-box" style="background-color: #ed0;" data-color="#ed0"></div>
+        <div class="color-box" style="background-color: #9d5;" data-color="#9d5"></div>
+        <div class="color-box" style="background-color: #4d8;" data-color="#4d8"></div>
+        <div class="color-box" style="background-color: #2cb;" data-color="#2cb"></div>
+        <div class="color-box" style="background-color: #0bc;" data-color="#0bc"></div>
+        <div class="color-box" style="background-color: #09c" data-color="#09c"></div>
+        <div class="color-box" style="background-color: #36b;" data-color="#36b"></div>
+         <div class="color-box" style="background-color:  #639;" data-color="#639"></div>
     </div>
     </div>
-    <div id="dynamicTable" style="width: max-content;"></div>
-
+    <div id="dynamicTable"></div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
